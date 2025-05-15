@@ -7,7 +7,7 @@ import Js from './images/Js.jpeg'
 import React from './images/React.jpeg'
 import Node from './images/Node.jpeg'
 import Sql from './images/Sql.jpeg'
-import avatar from './images/avatar.jpeg'
+import avatar from './images/Avatar.jpeg'
 
 
 function Sobre() {

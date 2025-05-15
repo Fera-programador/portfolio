@@ -1,0 +1,123 @@
+/* Css da pagina Projetos */
+
+.projetos h2 {
+    text-align: center;
+}
+
+.lista {
+ display: flex;
+ gap: 20px;
+ padding-top: 90px;
+}
+
+.card {
+    width: 350px;
+    height: 350px;
+    background-image: url('./image/image.avif');
+    background-size: 100vh;
+    color: var(--gray);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #22222270;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    color: var(--primary);
+    font-size: 1.5rem;
+}
+
+.card p {
+    color: var(--primary);
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 50%;
+}
+
+.card_footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card_icones {
+    display: flex;
+    gap: 10px;
+    color: var(--red);
+    font-size: 1.5rem;
+}
+
+.botao {
+ width: 50px;
+ height: 50px;
+ border: 0;
+ font-size: 1.5rem;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background-color:  #01013a;
+ color: var(--white);
+ border-radius: 50px;
+ cursor: pointer;
+}
+
+.botao:hover {
+    background-color: var(--red);
+    transition: all .9s;
+}
+
+/* Animações */
+@keyframes slideInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slideInTop {
+  animation: slideInTop 1s ease forwards;
+}
+
+.slideInLeft {
+  animation: slideInLeft 1s ease forwards;
+}
+
+.slideInRight {
+  animation: slideInRight 1s ease forwards;
+}

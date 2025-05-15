@@ -1,0 +1,11 @@
+.footer {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(135deg, #1c2331, #2f4a93);  
+    color: var(--white);
+    font-size: 0.70rem; /* 18px */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

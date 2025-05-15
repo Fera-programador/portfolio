@@ -1,0 +1,109 @@
+/* Css da pagina Sobre */
+
+
+.sobre {
+    width: 100%;
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.bio {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.bio span {
+    color: var(--red);
+    font-weight: bold;
+}
+
+.bio strong {
+    color: var(--secondary);
+    font-weight: bold;
+}
+
+.textos {
+    margin-bottom: 1rem;
+}
+
+.techs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 70%;
+}
+
+.icones {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 100px;
+    transition: transform 0.3s ease, fill 0.3s;
+}
+
+.icones img {
+    height: 70px;
+    box-shadow: 15px 5px 5px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 70px;
+    mix-blend-mode: screen;
+}
+
+.bio img {
+height: 200px;
+margin-right: 50px;
+box-shadow: 10px 0px rgba(0, 0, 0, 0.25);
+border-radius: 100px;
+}
+
+.textos p {
+    margin-top: 20px;
+}
+
+.avatar {
+    animation: avatar 1.5s ease-in-out infinite;
+  }
+  
+  @keyframes avatar {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-35px); /* Ajuste este valor para controlar a altura da flutuação */
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+
+  .icones:hover {
+    transform: scale(1.3);
+}
+
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.textos {
+  margin-bottom: 1rem;
+  animation: slideInFromRight 1s ease-out both;
+}
+
+/* Aplica ao título TECHS */
+.techs h3 {
+  animation: slideInFromRight 1s ease-out both;
+}

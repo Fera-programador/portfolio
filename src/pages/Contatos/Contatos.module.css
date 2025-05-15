@@ -1,0 +1,232 @@
+/* Css da pagina Contatos */
+
+.contatos {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.icones {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-block: 1.5rem;
+}
+
+.icone {
+  font-size: 3rem;
+  color: var(--black);
+  box-shadow: 8px 5px 3px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  transition: transform 0.3s ease, fill 0.3s;  
+}
+
+.icone:hover {
+  transform: scale(2.5);
+  fill: #ea0808;
+}
+
+
+/* Estilos do Formulário */
+.form {
+display: flex;
+flex-direction: column;
+gap: 1rem;
+max-width: 500px;
+margin: 2rem auto;
+width: 100%;
+}
+
+.form input,
+.form textarea {
+padding: 0.8rem;
+border: 2px solid #e0e0e0;
+border-radius: 8px;
+font-size: 1rem;
+transition: border-color 0.3s;
+width: 100%;
+}
+
+.form input:focus,
+.form textarea:focus {
+border-color: #01013a;
+outline: none;
+}
+
+.form button {
+display: flex;
+align-items: center;
+justify-content: center;
+background: linear-gradient(to right, #b0bbe0, #01013a);
+color: white;
+padding: 1rem;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+font-size: 1.1rem;
+transition: background 0.3s;
+}
+
+.form button:hover {
+background: var(--red);
+}
+
+/* Estilos da Mensagem de Agradecimento */
+.thankYou {
+text-align: center;
+padding: 2rem;
+background: #f8f9fa;
+border-radius: 12px;
+margin: 2rem auto;
+max-width: 500px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.thankYou h3 {
+color: #2ecc71;
+margin-bottom: 1rem;
+font-size: 1.5rem;
+}
+
+.thankYou p {
+color: #666;
+line-height: 1.6;
+margin-bottom: 1.5rem;
+}
+
+.button {
+background: linear-gradient(to right, #b0bbe0, #01013a);
+color: white;
+padding: 0.8rem 1.5rem;
+border: none;
+border-radius: 6px;
+cursor: pointer;
+transition: background 0.3s;
+}
+
+.button:hover {
+background: var(--red);
+}
+
+.error {
+color: #e74c3c;
+background: #f8d7da;
+padding: 1rem;
+border-radius: 4px;
+margin: 1rem 0;
+border: 1px solid #f5c6cb;
+}
+
+
+
+@keyframes spin {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(360deg);
+}
+}
+
+/* Animações */
+@keyframes slideInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.slideInTop {
+  animation-name: slideInTop;
+}
+
+.slideInLeft {
+  animation-name: slideInLeft;
+}
+
+.slideInRight {
+  animation-name: slideInRight;
+}
+
+.slideInBottom {
+  animation-name: slideInBottom;
+}
+
+.slideInUp {
+  animation-name: slideInUp;
+}
+
+/* Loading Spinner */
+.spinner {
+  width: 24px;
+  height: 24px;
+  border: 3px solid #fff;
+  border-top: 3px solid #e63946;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

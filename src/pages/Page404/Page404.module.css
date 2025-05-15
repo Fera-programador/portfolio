@@ -1,0 +1,41 @@
+.titulo2 {
+    padding-top: 2rem;
+    justify-content: center;
+    padding-left: 35px;
+}
+
+.textos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.texto_grande, .texto_vermelho {
+    font-size: 300px;
+    font-weight: bold;
+    color: var(--red);    
+}
+
+.texto_vermelho {
+    font-size: 1.5rem;
+}
+
+@keyframes fadeSlideScaleIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-10px) scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.containerAnimado {
+  animation: fadeSlideScaleIn 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) both;
+}

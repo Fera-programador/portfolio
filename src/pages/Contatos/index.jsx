@@ -26,7 +26,7 @@ function Contatos() {
     setLoading(true);
   
     try {
-      const response = await fetch("http://localhost:5000/api/contato", {
+      const response = await fetch("https://formsubmit.co/ajax/dsdouglas13@gmail.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

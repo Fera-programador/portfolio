@@ -160,7 +160,7 @@ function Contatos() {
 function ThankYouMessage({ onReset }) {
   return (
     <div className={`${styles.thankYou} ${styles.slideInUp}`}>
-      <h3>Mensagem enviada com sucesso! ✅</h3>
+      <h3>Mensagem enviada com sucesso!✅</h3>
       <p>Obrigado pelo seu contato.</p>
       <p> Responderei o mais breve possível...</p>
       <button onClick={onReset} className={styles.button} type="button">

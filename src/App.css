@@ -1,1 +1,69 @@
+/* Extra pequeno (Celulares antigos em pé - até 360px) */
+@media (max-width: 360px) {
+  body {
+    font-size: 14px;
+  }
+}
 
+/* Celulares modernos (até 480px) */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tablets em pé (481px - 768px) */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* Tablets deitados e laptops pequenos (769px - 1024px) */
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  main {
+    padding: 1.5rem;
+  }
+}
+
+/* Telas grandes (1025px - 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Telas muito grandes (1441px ou mais) */
+@media (min-width: 1441px) {
+  .grid {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  body {
+    font-size: 18px;
+  }
+}

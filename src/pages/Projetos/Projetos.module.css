@@ -121,3 +121,26 @@
 .slideInRight {
   animation: slideInRight 1s ease forwards;
 }
+
+@media (max-width: 768px) {
+  .lista {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card_footer {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .card_icones {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+}

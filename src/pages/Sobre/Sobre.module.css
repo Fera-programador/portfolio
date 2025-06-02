@@ -106,3 +106,35 @@ border-radius: 100px;
 .techs h3 {
   animation: slideInFromRight 1s ease-out both;
 }
+
+@media (max-width: 768px) {
+  .bio {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .textos {
+    align-items: center;
+  }
+
+  .avatar {
+    width: 160px;
+    height: 160px;
+  }
+
+  .techs {
+    padding: 1rem;
+  }
+
+  .icones {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .icones img {
+    width: 50px;
+    height: 50px;
+  }
+}

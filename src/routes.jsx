@@ -8,8 +8,7 @@ import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import Container from './components/Container/index'
 import { Analytics } from "@vercel/analytics/react"; // Importa o Analytic
- import VercelMetrics from '../components/Analytics/VercelMetrics'; // Importa o VercelMetrics
-// Importa o SpeedInsights
+ import SpeedInsights from '../components/Analytics/VercelMetrics'; // Importa o SpeedInsights
 
 function AppRoutes() {
     return (
@@ -27,7 +26,7 @@ function AppRoutes() {
             </Container>
             <Footer />
              <Analytics />
-                      <VercelMetrics />
+                      <SpeedInsights />
         </BrowserRouter>
         </>
     )

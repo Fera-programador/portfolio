@@ -26,7 +26,7 @@ function AppRoutes() {
             </Container>
             <Footer />
              <Analytics />
-             <SpeedInsights />
+             <SpeedInsights debug={true} />
         </BrowserRouter>
         </>
     )

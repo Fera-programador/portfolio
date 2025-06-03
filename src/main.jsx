@@ -10,6 +10,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
      <Analytics />
-     <SpeedInsights />
+     <SpeedInsights debug={true} />
   </React.StrictMode>
 );

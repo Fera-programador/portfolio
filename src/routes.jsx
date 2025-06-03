@@ -7,7 +7,7 @@ import Page404 from './pages/Page404'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import Container from './components/Container/index'
-
+import { Analytics } from "@vercel/analytics/react"; // Importa o Analytic
 
 
 function AppRoutes() {
@@ -25,6 +25,7 @@ function AppRoutes() {
                 </Routes>
             </Container>
             <Footer />
+             <Analytics />
         </BrowserRouter>
         </>
     )

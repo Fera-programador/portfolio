@@ -1,4 +1,4 @@
-import { SpeedInsights } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 const VercelMetrics = () => {
   // Only render on client side

@@ -42,7 +42,6 @@ margin-bottom: 1rem;
 background-color: #051b596c;  
 color: var(--white);
 transition: transform 0.3s ease, fill 0.3s;  
-
 }
 
 .btn_red:hover {
@@ -89,18 +88,28 @@ transition: transform 0.3s ease, fill 0.3s;
   opacity: 0;
 }
 
-@media (max-width: 768px) {
+.home {
+  display: grid;
+  grid-template-areas: 
+    "imagem"
+    "texto";
+  gap: 1rem;
+  text-align: center;
+}
+
+.img_home {
+  grid-area: imagem;
+  max-width: 80%;
+  height: auto; /* Mantém a proporção */
+}
+
+.apresentacao {
+  grid-area: texto;
+}
+
+@media (min-width: 769px) {
   .home {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .apresentacao {
+    grid-template-areas: "texto imagem"; /* Layout para desktop */
     align-items: center;
-  }
-
-  .img_home {
-    max-width: 80%;
-    margin-top: 2rem;
   }
 }

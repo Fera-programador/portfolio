@@ -1,5 +1,5 @@
 // Página Contato  ATUALIZADA 2025
-
+import { supabase } from '../../Database/supabaseClient';
 import { useState, useEffect } from "react";
 import styles from "./Contatos.module.css";
 import { GoMail } from "react-icons/go";
@@ -21,54 +21,44 @@ function Contatos() {
   }, []);
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    setError(null);
-    setLoading(true);
-  
-    try {
-      const response = await fetch("https://formsubmit.co/ajax/dsdouglas13@gmail.com", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ Nome, Email, Mensagem }),
-      });
-  
-        // 🪵 Log dos valores do formulário
-        console.log("Nome:", Nome);
-        console.log("Email:", Email);
-        console.log("Mensagem:", Mensagem);
+  e.preventDefault();
+  setError(null);
+  setLoading(true);
 
-      let data = {};
-      try {
-        const text = await response.text();
-        data = text ? JSON.parse(text) : {};
-      } catch (err) {
-        console.error("Erro ao processar JSON da resposta:", err);
-        setError("Erro inesperado no servidor. Tente novamente mais tarde.");
-        setLoading(false);
-        return;
-      }
-  
-      if (!response.ok) {
-        throw new Error(data.message || "Erro ao enviar mensagem");
-      }
-  
-      if (data.success) {
-        setSubmitted(true);
-        setNome("");
-        setEmail("");
-        setMensagem("");
-        e.target.reset();
-      }
-    } catch (error) {
-      console.error("Erro no envio:", error);
-      setError(error.message || "Erro ao enviar a mensagem. Tente novamente.");
-    } finally {
-      setLoading(false);
+  try {
+    // 🪵 Log dos valores do formulário (para debug)
+    console.log("✅ Dados do formulário:");
+    console.log("Nome:", Nome);
+    console.log("Email:", Email);
+    console.log("Mensagem:", Mensagem);
+
+    // Envia para o Supabase
+    const { error: supabaseError } = await supabase
+      .from('mensagens')
+      .insert([{ 
+        Nome: Nome, 
+        Email: Email, 
+        Mensagem: Mensagem, 
+        Data: new Date().toISOString()  // Formato: "2025-06-04T14:30:00.000Z"
+      }]);
+
+    if (supabaseError) {
+      throw new Error(supabaseError.message || "Erro ao salvar no banco de dados");
     }
-  };
-  
+
+    // Sucesso!
+    setSubmitted(true);
+    setNome("");
+    setEmail("");
+    setMensagem("");
+    
+  } catch (error) {
+    console.error("Erro no envio:", error);
+    setError(error.message || "Erro ao enviar a mensagem. Tente novamente.");
+  } finally {
+    setLoading(false);
+  }
+};
 
   return (
     <section className={styles.contatos} id="contatos">

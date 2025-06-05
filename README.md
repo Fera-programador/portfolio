@@ -23,7 +23,7 @@ Este é meu portfólio pessoal desenvolvido com React + Vite, com objetivo de ap
 
 1. Clone o repositório:
 
-bash
+## ```bash
 git clone https://github.com/Fera-programador
 
 ## 📬 Contato

@@ -2,7 +2,7 @@
 
 .home {
     width: 100%;
-    min-height: 85vh;
+    min-height: 75vh;
 
     display: flex;
     align-items: center;
@@ -37,6 +37,7 @@ margin-bottom: 1rem;
     text-decoration: none;
     box-shadow: 15px 10px 5px 0px rgba(0, 0, 0, 0.25);
     margin-left: 18%;
+    margin-bottom: 15%;
 }
 
 .btn_red {

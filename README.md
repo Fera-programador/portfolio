@@ -19,13 +19,6 @@ Este é meu portfólio pessoal desenvolvido com React + Vite, com objetivo de ap
 - [TailwindCSS](https://tailwindcss.com/) ou CSS puro *(dependendo do que você estiver usando)*
 - Hospedagem: [Vercel](https://vercel.com/)
 
-## 📦 Instalação e Execução Local
-
-1. Clone o repositório:
-
-## ```bash
-git clone https://github.com/Fera-programador
-
 ## 📬 Contato
 
 Se você quiser entrar em contato comigo para oportunidades, colaborações ou apenas trocar uma ideia sobre tecnologia, use um dos canais abaixo:
@@ -36,3 +29,10 @@ Se você quiser entrar em contato comigo para oportunidades, colaborações ou a
 
 
 Fique à vontade para me chamar!
+
+## 📦 Instalação e Execução Local do Projeto
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/Fera-programador

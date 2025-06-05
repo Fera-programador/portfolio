@@ -19,7 +19,7 @@ Este é meu portfólio pessoal desenvolvido com React + Vite, com objetivo de ap
 - [TailwindCSS](https://tailwindcss.com/) ou CSS puro *(dependendo do que você estiver usando)*
 - Hospedagem: [Vercel](https://vercel.com/)
 
-## 🚀 Instalação e Execução Local
+## 📦 Instalação e Execução Local
 
 1. Clone o repositório:
 

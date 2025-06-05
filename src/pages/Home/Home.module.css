@@ -24,33 +24,43 @@ margin-bottom: 1rem;
 }
 
 .btn {
-    width: 250px;
-    height: 50px;
-    font-size: 1.25rem;
-    font-weight: bold;
-    border: 0;
-    border-radius: 8px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    box-shadow: 15px 10px 5px 0px rgba(0, 0, 0, 0.25);
-    margin-left: 18%;
-    margin-bottom: 15%;
+  width: 250px;
+  height: 50px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-left: 18%;
+  margin-bottom: 15%;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn_red {
-background-color: #051b596c;  
-color: var(--white);
-transition: transform 0.3s ease, fill 0.3s;  
+  background: red;
+  color: var(--white);
+  transition: all 0.3s ease-in-out;
+  box-shadow:
+    0 0 5px var(--red),
+    0 0 10px var(--red),
+    0 0 15px var(--red);
 }
 
 .btn_red:hover {
-    background-color: var(--red);
-    transition: all 2.0s;
-    transform: scale(1.3);
+  background-color: var(--red);
+  transform: scale(1.1);
+  color: #e7e2e2;
+  box-shadow:
+    0 0 10px var(--red),
+    0 0 20px var(--red),
+    0 0 30px var(--red),
+    0 0 40px var(--red);
 }
+
 
 /* Animação de entrada avançada */
 @keyframes fadeSlideZoom {

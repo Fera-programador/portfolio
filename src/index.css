@@ -28,3 +28,10 @@
   justify-content: center;
   text-decoration: none;
 }
+
+body {
+  background-image: url('/public/image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

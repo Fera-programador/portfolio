@@ -22,12 +22,13 @@
 }
 
 .bio strong {
-    color: var(--secondary);
+    color: var(--red);
     font-weight: bold;
 }
 
 .textos {
     margin-bottom: 1rem;
+    color: var(--white);
 }
 
 .techs {
@@ -36,6 +37,7 @@
     align-items: center;
     gap: 1rem;
     width: 70%;
+    color: var(--white);
 }
 
 .icones {
@@ -49,7 +51,7 @@
 
 .icones img {
     height: 70px;
-    box-shadow: 15px 5px 5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 15px 5px 5px 0px rgba(250, 248, 248, 0.066);
     border-radius: 70px;
     mix-blend-mode: screen;
 }

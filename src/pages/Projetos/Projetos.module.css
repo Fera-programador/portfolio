@@ -2,6 +2,7 @@
 
 .projetos h2 {
     text-align: center;
+    color: var(--white);
 }
 
 .lista {
@@ -17,7 +18,7 @@
     background-size: 100vh;
     color: var(--gray);
     border-radius: 10px;
-    box-shadow: 5px 5px 10px #22222270;
+    box-shadow: 5px 5px 10px #f7f4f4a9;
     padding: 20px;
     display: flex;
     flex-direction: column;

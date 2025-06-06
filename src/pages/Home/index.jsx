@@ -28,7 +28,7 @@ function Home() {
             <figure>
                 <img 
                     className={`${styles.img_home} ${isActive ? styles.active : ''}`} 
-                    src="\undraw_developer-activity_4zqd.svg" 
+                    src="\imagem2.png" 
                     alt="imagem de Home" 
                 />
             </figure>

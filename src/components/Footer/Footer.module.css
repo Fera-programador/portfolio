@@ -1,7 +1,10 @@
 .footer {
     width: 100%;
     height: 50px;
-    background: linear-gradient(135deg, #1c2331, #2f4a93);  
+   background-image: url('/public/image.png');
+   background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
     color: var(--white);
     font-size: 0.70rem; /* 18px */
 

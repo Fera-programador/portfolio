@@ -17,6 +17,7 @@
 font-size: 3rem;  /* 48px */
 font-weight: bold;
 margin-bottom: 1rem;
+color: var(--primary);
 }
 
 .home span {
@@ -99,6 +100,9 @@ margin-bottom: 1rem;
   animation-delay: 0.9s;
   opacity: 0;
 }
+
+
+ /* Responsividade Tablet e Mobile */
 
 .home {
   display: grid;

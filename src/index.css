@@ -1,5 +1,5 @@
 :root {
-  font-family: 'Fira Code', monospace;
+  font-family: 'Orbitron', sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -23,7 +23,7 @@
 }
 
 .btn {
-    display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;

@@ -1,4 +1,4 @@
-/* Extra pequeno (Celulares antigos em pé - até 360px) */
+/* Responsividade Extra pequeno (Celulares antigos em pé - até 360px) */
 @media (max-width: 360px) {
   body {
     font-size: 14px;

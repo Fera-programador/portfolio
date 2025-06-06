@@ -28,7 +28,7 @@ function Home() {
             <figure>
                 <img 
                     className={`${styles.img_home} ${isActive ? styles.active : ''}`} 
-                    src="\imagem2.png" 
+                    src="\imagemDev.png" 
                     alt="imagem de Home" 
                 />
             </figure>

@@ -14,35 +14,38 @@
 .card {
     width: 350px;
     height: 350px;
-    background-image: url('./image/image.avif');
-    background-size: 100vh;
-    color: var(--gray);
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px #f7f4f4a9;
+    background: rgba(18, 18, 30, 0.6); /* fundo escuro translúcido */
+    border-radius: 12px;
+    border: 1px solid #8e2eff;
+    box-shadow: 0 0 15px #8e2eff, 0 0 30px #ff00cc inset;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(10px);
 }
 
 .card:hover {
-    transform: translateY(-20px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #ff00cc, 0 0 40px #8e2eff inset;
 }
 
 .card h3 {
-    color: var(--primary);
-    font-size: 1.5rem;
+    color: var(--red);
+    font-size: 1.8rem;
+    text-shadow: 0 0 8px #7a6c78;
+    margin-bottom: 10px;
 }
 
 .card p {
-    color: var(--primary);
-    font-size: 1.25rem;
-    font-weight: bold;
-    margin-top: 50%;
+    color: #c2c2ff;
+    font-size: 1.2rem;
+    text-align: center;
+    text-shadow: 0 0 6px #8e2eff;
 }
+
 
 .card_footer {
     width: 100%;
@@ -56,26 +59,32 @@
     gap: 10px;
     color: var(--red);
     font-size: 1.5rem;
+    margin-top: 30%;
 }
 
 .botao {
- width: 50px;
- height: 50px;
- border: 0;
- font-size: 1.5rem;
- display: flex;
- align-items: center;
- justify-content: center;
- background-color:  #01013a;
- color: var(--white);
- border-radius: 50px;
- cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #8e2eff;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0a0a2a;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #8e2eff, 0 0 20px #ff00cc inset;
+    transition: all 0.3s ease;
+    margin-top: 10%;
 }
 
 .botao:hover {
-    background-color: var(--red);
-    transition: all .9s;
+    background-color: #12003b;
+    box-shadow: 0 0 15px #ff00cc, 0 0 30px #8e2eff, 0 0 10px #ff00cc inset;
+    transform: scale(1.1);
 }
+
 
 /* Animações */
 @keyframes slideInTop {

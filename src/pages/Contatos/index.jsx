@@ -1,5 +1,5 @@
 // Página Contato  ATUALIZADA 2025
-import { supabase } from '../../Database/supabaseClient';
+
 import { useState, useEffect } from "react";
 import styles from "./Contatos.module.css";
 import { GoMail } from "react-icons/go";
@@ -26,39 +26,30 @@ function Contatos() {
   setLoading(true);
 
   try {
-    // 🪵 Log dos valores do formulário (para debug)
-    console.log("✅ Dados do formulário:");
-    console.log("Nome:", Nome);
-    console.log("Email:", Email);
-    console.log("Mensagem:", Mensagem);
+    const response = await fetch("https://backend-portfolio-production-ce25.up.railway.app/api/mensagem", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ Nome, Email, Mensagem }),
+    });
 
-    // Envia para o Supabase
-    const { error: supabaseError } = await supabase
-      .from('mensagens')
-      .insert([{ 
-        Nome: Nome, 
-        Email: Email, 
-        Mensagem: Mensagem, 
-        Data: new Date().toISOString()  // Formato: "2025-06-04T14:30:00.000Z"
-      }]);
+    const result = await response.json();
 
-    if (supabaseError) {
-      throw new Error(supabaseError.message || "Erro ao salvar no banco de dados");
+    if (!response.ok) {
+      throw new Error(result.error || "Erro ao enviar a mensagem");
     }
 
-    // Sucesso!
     setSubmitted(true);
     setNome("");
     setEmail("");
     setMensagem("");
-    
   } catch (error) {
     console.error("Erro no envio:", error);
-    setError(error.message || "Erro ao enviar a mensagem. Tente novamente.");
+    setError(error.message);
   } finally {
     setLoading(false);
   }
 };
+
 
   return (
     <section className={styles.contatos} id="contatos">

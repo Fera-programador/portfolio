@@ -34,5 +34,4 @@ Se você quiser entrar em contato comigo para oportunidades, colaborações ou a
 - 📧 E-mail:[dsdouglas13@gmail.com](mailto:dsdouglas13@gmail.com)
 - 💼 LinkedIn:[https://www.linkedin.com/in/douglas-souza-dos-santos-113211261/](https://www.linkedin.com/in/douglas-souza-dos-santos-113211261/)
 
-
 Fique à vontade para me chamar!

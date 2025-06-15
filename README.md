@@ -19,30 +19,20 @@ Este é meu portfólio pessoal desenvolvido com React + Vite, com objetivo de ap
 - [TailwindCSS](https://tailwindcss.com/) ou CSS puro *(dependendo do que você estiver usando)*
 - Hospedagem: [Vercel](https://vercel.com/)
 
-## 📬 Contato
-
-Se você quiser entrar em contato comigo para oportunidades, colaborações ou apenas trocar uma ideia sobre tecnologia, use um dos canais abaixo:
-
-- 📧 E-mail: [dsdouglas13@gmail.com](mailto:dsdouglas13@gmail.com)
-- 💼 LinkedIn: [https://www.linkedin.com/in/douglas-souza-dos-santos-113211261/](https://www.linkedin.com/in/douglas-souza-dos-santos-113211261/)
-- 💻 GitHub: [github.com/Fera-programador](https://github.com/Fera-programador)
-
-
-Fique à vontade para me chamar!
-
-# React + Vite
-
-Este modelo fornece uma configuração mínima para que o React funcione no Vite com HMR e algumas regras ESLint.
-
-Atualmente, dois plugins oficiais estão disponíveis:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-
 ## 📦 Instalação e Execução Local do Projeto
 
 1. Clone o repositório:
 
 ```bash
 git clone https://github.com/Fera-programador
+```
+
+## 📬 Contato
+
+Se você quiser entrar em contato comigo para oportunidades, colaborações ou apenas trocar uma idéia sobre tecnologia, use um dos canais abaixo:
+
+- 📧 E-mail:[dsdouglas13@gmail.com](mailto:dsdouglas13@gmail.com)
+- 💼 LinkedIn:[https://www.linkedin.com/in/douglas-souza-dos-santos-113211261/](https://www.linkedin.com/in/douglas-souza-dos-santos-113211261/)
+
+
+Fique à vontade para me chamar!

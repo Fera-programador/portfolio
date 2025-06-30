@@ -26,7 +26,7 @@ function Contatos() {
   setLoading(true);
 
   try {
-    const response = await fetch("https://backend-portfolio-production-ce25.up.railway.app/api/mensagem", {
+    const response = await fetch("https://backend-portfolio-production-931b.up.railway.app/api/mensagem", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ Nome, Email, Mensagem }),

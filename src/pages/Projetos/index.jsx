@@ -55,7 +55,7 @@ function Projetos() {
                      </div>
                  </section>
                  <section className={`${styles.card} ${styles.slideInRight}`}>
-                    <h3>Calculadora</h3>
+                    <h3>CALCULADORA</h3>
                     <p>Projeto de Calculadora</p>
                     <div className={styles.card_footer}>
                         <div className={styles.card_icones}>
@@ -64,7 +64,7 @@ function Projetos() {
                          <FaJs />
                          <FaReact />
                          </div>
-                    <a href='https://hlidx1.mimo.run/index.html' target='_blank' rel="noopener noreferrer" className={styles.botao}>
+                    <a href='https://10a2ac7f2476431090c24b6b6459c4f4.el.mimo.run/index.html' target='_blank' rel="noopener noreferrer" className={styles.botao}>
                           <RiArrowRightCircleFill />
                          </a>
                      </div>

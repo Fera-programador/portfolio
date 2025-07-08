@@ -49,7 +49,7 @@ function Projetos() {
                          <FaJs />
                          <FaReact />
                          </div>
-                    <a href='https://kobjak.mimo.run/index.html' target='_blank' rel="noopener noreferrer" className={styles.botao}>
+                    <a href='https://kf5a1y.mimo.run/index.html' target='_blank' rel="noopener noreferrer" className={styles.botao}>
                           <RiArrowRightCircleFill />
                          </a>
                      </div>
@@ -64,7 +64,7 @@ function Projetos() {
                          <FaJs />
                          <FaReact />
                          </div>
-                    <a href='https://9a7bb76c74c0472f8cf4314bc3a47a79.el.mimo.run/index.html' target='_blank' rel="noopener noreferrer" className={styles.botao}>
+                    <a href='https://6f742q.mimo.run/index.html' target='_blank' rel="noopener noreferrer" className={styles.botao}>
                           <RiArrowRightCircleFill />
                          </a>
                      </div>

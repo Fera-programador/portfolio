@@ -64,7 +64,7 @@ function Projetos() {
                          <FaJs />
                          <FaReact />
                          </div>
-                    <a href='https://hlidx1.mimo.run/index.html' target='_blank' rel="noopener noreferrer" className={styles.botao}>
+                    <a href='https://9a7bb76c74c0472f8cf4314bc3a47a79.el.mimo.run/index.html' target='_blank' rel="noopener noreferrer" className={styles.botao}>
                           <RiArrowRightCircleFill />
                          </a>
                      </div>

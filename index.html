@@ -66,6 +66,35 @@
   </head>
   <body>
     <div id="root"><h1 class="loading">Carregando</h1></div>
+    <script>
+  const LOADING_TIME = 3000;
+  const root = document.getElementById('root');
+  
+  // Adiciona uma barra de progresso
+  root.innerHTML = `
+    <div style="text-align: center; margin-top: 20%;">
+      <h1 class="loading">Carregando</h1>
+      <div style="width: 200px; height: 5px; background: #444; margin: 20px auto;">
+        <div id="progress-bar" style="width: 0%; height: 100%; background: #00ff88; transition: width 0.3s;"></div>
+      </div>
+    </div>
+  `;
+
+  // Anima a barra de progresso
+  const progressBar = document.getElementById('progress-bar');
+  let progress = 0;
+  const interval = setInterval(() => {
+    progress += 5;
+    progressBar.style.width = `${progress}%`;
+    if (progress >= 100) clearInterval(interval);
+  }, LOADING_TIME / 20);
+
+  // Remove tudo após o tempo definido
+  setTimeout(() => {
+    root.style.opacity = '0';
+    setTimeout(() => root.remove(), 500);
+  }, LOADING_TIME);
+</script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

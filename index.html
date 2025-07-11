@@ -30,71 +30,97 @@
   <link rel="icon" type="image/png" href="/favicon.png" />
 
     <title>Portfólio</title>
-    <style>
-  .loading {
-    font-family: 'Orbitron', 'Fira Code', monospace;
-    font-size: 2rem;
-    color: #e0ebe7;
-    text-align: center;
-    margin-top: 20%;
-    
+      <style>
+    .loading {
+      font-family: 'Orbitron', 'Fira Code', monospace;
+      font-size: 2rem;
+      color: #e0ebe7;
+      text-align: center;
+      margin-top: 20%;
+      position: relative;
+      opacity: 1;
+      transition: opacity 0.5s ease-in-out;
+    }
 
-    /* Animação de pontos */
-    position: relative;
-  }
+    .loading::after {
+      content: "";
+      display: inline-block;
+      width: 1ch;
+      animation: dots 1s steps(3, end) infinite;
+      vertical-align: bottom;
+    }
 
-  .loading::after {
-    content: "";
-    display: inline-block;
-    width: 1ch;
-    animation: dots 1s steps(3, end) infinite;
-    vertical-align: bottom;
-  }
+    @keyframes dots {
+      0%   { content: ""; }
+      33%  { content: "."; }
+      66%  { content: ".."; }
+      100% { content: "..."; }
+    }
 
-  @keyframes dots {
-    0%   { content: ""; }
-    33%  { content: "."; }
-    66%  { content: ".."; }
-    100% { content: "..."; }
-  }
+    .progress-container {
+      width: 300px;
+      height: 6px;
+      background: rgba(68, 68, 68, 0.3);
+      border-radius: 3px;
+      margin: 20px auto;
+      overflow: hidden;
+    }
 
-  /* Fundo opcional com estilo escuro futurista */
-  body {
-    background-color: #070443e1;
-  }
-</style>
-  </head>
-  <body>
-    <div id="root"><h1 class="loading">Carregando</h1></div>
-    <script>
-  const LOADING_TIME = 3000;
-  const root = document.getElementById('root');
-  
-  // Adiciona uma barra de progresso
-  root.innerHTML = `
-    <div style="text-align: center; margin-top: 20%;">
+    .progress-bar {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #00ff88, #00b8ff);
+      border-radius: 3px;
+      transition: width 0.3s ease-out;
+    }
+
+    body {
+      background-color: #070443e1;
+      margin: 0;
+      height: 100vh;
+    }
+
+    .loading-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div class="loading-wrapper">
       <h1 class="loading">Carregando</h1>
-      <div style="width: 200px; height: 5px; background: #444; margin: 20px auto;">
-        <div id="progress-bar" style="width: 0%; height: 100%; background: #00ff88; transition: width 0.3s;"></div>
+      <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
       </div>
     </div>
-  `;
+  </div>
 
-  // Anima a barra de progresso
-  const progressBar = document.getElementById('progress-bar');
-  let progress = 0;
-  const interval = setInterval(() => {
-    progress += 5;
-    progressBar.style.width = `${progress}%`;
-    if (progress >= 100) clearInterval(interval);
-  }, LOADING_TIME / 20);
+  <script>
+    // Configuration
+    const LOADING_TIME = 3000; // 3 seconds
+    const progressBar = document.getElementById('progress-bar');
+    const loadingElement = document.querySelector('.loading-wrapper');
 
-  // Remove tudo após o tempo definido
-  setTimeout(() => {
-    root.style.opacity = '0';
-    setTimeout(() => root.remove(), 500);
-  }, LOADING_TIME);
-</script>
+    // Animate progress bar
+    let progress = 0;
+    const interval = setInterval(() => {
+      progress += 1;
+      progressBar.style.width = `${progress}%`;
+      
+      if (progress >= 100) {
+        clearInterval(interval);
+        // Fade out and remove loader
+        loadingElement.style.opacity = '0';
+        setTimeout(() => {
+          loadingElement.remove();
+        }, 500);
+      }
+    }, LOADING_TIME / 100); // Divide time into 100 increments
+  </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

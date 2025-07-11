@@ -58,14 +58,14 @@ width: 100%;
     background: transparent;
     color: #fff;
     transition: border-color 0.3s, box-shadow 0.3s ease;
-    box-shadow: 0 0 5px #8e2eff;
+    box-shadow: 0 0 5px #4006e091;
 }
 
 .form input:focus,
 .form textarea:focus {
-    border-color: #ff00cc;
+    border-color: #4006e091;
     outline: none;
-    box-shadow: 0 0 8px #ff00cc, 0 0 12px #8e2eff;
+    box-shadow: 0 0 8px #ff2e7065, 0 0 12px #8e2eff;
 }
 
 .form button {
@@ -79,13 +79,13 @@ width: 100%;
     border-radius: 8px;
     cursor: pointer;
     font-size: 1.1rem;
-    box-shadow: 0 0 10px #8e2eff, 0 0 20px #ff00cc;
+    box-shadow: 0 0 10px #8e2eff, 0 0 20px #ff00008d;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .form button:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 20px #ff00cc, 0 0 30px #8e2eff;
+    box-shadow: 0 0 20px #ff00008d, 0 0 30px #8e2eff;
 }
 
 
@@ -93,8 +93,9 @@ width: 100%;
 .thankYou {
 text-align: center;
 padding: 2rem;
-background: #f8f9fa;
+background-image: url('/public/image.png');
 border-radius: 12px;
+border: 2px solid #4006e091;
 margin: 2rem auto;
 max-width: 500px;
 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -107,7 +108,7 @@ font-size: 1.5rem;
 }
 
 .thankYou p {
-color: #666;
+color: #fff;
 line-height: 1.6;
 margin-bottom: 1.5rem;
 }

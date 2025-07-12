@@ -110,3 +110,49 @@ font-size: 1.125rem; /* 18px */
 .nav a:hover::after {
     width: 100%; /* sublinhado animado */
 }
+
+/* Estilos existentes... */
+
+.toggleContainer {
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+    padding: 3px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+    transition: all 0.3s ease;
+    
+    /* Efeito Neumórfico - Dark */
+    background: #2a2a2a;
+    box-shadow: 5px 5px 10px #1f1f1f,
+                -5px -5px 10px #353535;
+}
+
+.toggleContainer.light {
+    /* Efeito Neumórfico - Light */
+    background: #f0f0f0;
+    box-shadow: 5px 5px 10px #d9d9d9,
+                -5px -5px 10px #ffffff;
+}
+
+.toggleButton {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    background-size: cover;
+    background-position: center;
+    
+    /* Efeito Neumórfico - Dark */
+    box-shadow: 3px 3px 5px #1f1f1f,
+                -3px -3px 5px #353535;
+}
+
+.toggleContainer.light .toggleButton {
+    transform: translateX(30px);
+    /* Efeito Neumórfico - Light */
+    box-shadow: 2px 2px 3px #d9d9d9,
+                -2px -2px 3px #ffffff;
+}

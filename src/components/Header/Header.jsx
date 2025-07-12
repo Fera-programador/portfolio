@@ -1,8 +1,10 @@
-import { useState } from "react"
-import { Link } from "react-router-dom"
-import styles from "./Header.module.css"
+import { useContext, useState } from "react";
+import { Link } from "react-router-dom";
+import { ThemeContext } from "../../contexts/ThemeContext";
+import styles from "./Header.module.css";
 
 function Header() {
+    const { lightMode, toggleLightMode } = useContext(ThemeContext);
     const [menuAberto, setMenuAberto] = useState(false);
 
     const alternarMenu = () => {
@@ -15,19 +17,27 @@ function Header() {
                 <span>Douglas Santos</span>
             </Link>
 
-            {/* Ícone do menu sandwich */}
             <div className={styles.menuSandwich} onClick={alternarMenu}>
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
 
-            {/* Menu de navegação */}
             <nav className={`${styles.nav} ${menuAberto ? styles.aberto : ""}`}>
                 <Link to="/">Home</Link>
                 <Link to="/Sobre">Sobre</Link>
                 <Link to="/Projetos">Projetos</Link>
                 <Link to="/Contatos">Contato</Link>
+
+                <div
+                    className={`${styles.toggleContainer} ${lightMode ? styles.light : ''}`}
+                    onClick={toggleLightMode}
+                >
+                    <div
+                        className={styles.toggleButton}
+                        style={{ backgroundImage: "url('/public/image.png')" }}
+                    ></div>
+                </div>
             </nav>
         </header>
     );

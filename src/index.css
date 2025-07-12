@@ -29,9 +29,18 @@
   text-decoration: none;
 }
 
-body {
+body.dark {
   background-image: url('/public/image.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    transition: all 0.3s ease;
+}
+
+
+body.light {
+  background-image: url('/public/imagemDev.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease;
 }

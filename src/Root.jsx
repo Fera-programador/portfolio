@@ -3,6 +3,8 @@ import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/react';
 import App from './App';
 import './index.css';
+import { ThemeProvider } from './contexts/ThemeContext';
+
 
 const Root = () => {
   const [loading, setLoading] = useState(true);
@@ -89,7 +91,9 @@ const Root = () => {
 
   return (
     <>
+     <ThemeProvider>
       <App />
+      </ThemeProvider>
       <Analytics />
       <SpeedInsights debug={true} />
     </>

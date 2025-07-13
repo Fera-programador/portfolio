@@ -10,7 +10,7 @@ function Projetos() {
         <h2 className={styles.slideInTop}>PROJETOS</h2>
         <section className={styles.lista}>
         <section className={`${styles.card} ${styles.slideInLeft}`}>
-                    <h3>Dashboard Python</h3>
+                    <h3>DASHBOARD EM PYTHON</h3>
                     <p>Dashboard Análise Global</p>
                     <div className={styles.card_footer}>
                         <div className={styles.card_icones}>
@@ -55,7 +55,7 @@ function Projetos() {
                      </div>
                  </section>
                  <section className={`${styles.card} ${styles.slideInRight}`}>
-                    <h3>CALCULADORA</h3>
+                    <h3>CALCULADORA EM JAVASCRIPT</h3>
                     <p>Projeto de Calculadora</p>
                     <div className={styles.card_footer}>
                         <div className={styles.card_icones}>

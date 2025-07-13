@@ -10,8 +10,8 @@ function Projetos() {
         <h2 className={styles.slideInTop}>PROJETOS</h2>
         <section className={styles.lista}>
         <section className={`${styles.card} ${styles.slideInLeft}`}>
-                    <h3>CARTÃO DE NEGÓCIOS</h3>
-                    <p>Modelo Cartão de Negócio</p>
+                    <h3>Dashboard Python</h3>
+                    <p>Dashboard Análise Global</p>
                     <div className={styles.card_footer}>
                         <div className={styles.card_icones}>
                          <FaHtml5 />
@@ -19,7 +19,7 @@ function Projetos() {
                          <FaJs />
                          <FaReact />
                          </div>
-                    <a href='https://ri4efu.mimo.run/index.html' target='_blank' rel="noopener noreferrer" className={styles.botao}>
+                    <a href='https://dashboard-python-production-2d8e.up.railway.app/' target='_blank' rel="noopener noreferrer" className={styles.botao}>
                           <RiArrowRightCircleFill />
                          </a>
                      </div>

@@ -23,7 +23,8 @@
   font-size: 3rem;
   color: #ff003371;
   text-shadow: 0 0 8px #ff0055, 0 0 15px #8e2eff;
-  background-color: #0a0a2a;
+  background-color: transparent;
+  border: #ed060a solid 3px;
   border-radius: 10px;
   padding: 0.5rem;
   box-shadow: 0 0 10px #ff2e3c;

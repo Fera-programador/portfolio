@@ -89,7 +89,7 @@ function Contatos() {
             <input
               type="email"
               name="Email"
-              placeholder="Seu melhor E-mail"
+              placeholder="Seu Melhor E-mail"
               required
               className={`${styles.inputField} ${styles.slideInRight} ${animate ? styles.animate : ""}`}
               style={{ animationDelay: "0.4s" }}
@@ -159,4 +159,4 @@ function LoadingSpinner() {
   return <div className={styles.spinner}></div>;
 }
 
-export default Contatos;
+export default Contatos

@@ -24,16 +24,8 @@ function Home() {
                     Saiba mais sobre mim
                 </Link>
             </div>
-            
-            <figure>
-                <img 
-                    className={`${styles.img_home} ${isActive ? styles.active : ''}`} 
-                    src="\imagemDev.png" 
-                    alt="imagem de Home" 
-                />
-            </figure>
         </section>
     );
 }
 
-export default Home;
+export default Home

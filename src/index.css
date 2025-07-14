@@ -39,7 +39,7 @@ body.dark, header.dark, footer.dark {
 
 
 body.light, header.light, footer.light {
-    background-image: url('/public/space.png');
+    background-image: url('/public/waves1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     transition: all 0.3s ease;

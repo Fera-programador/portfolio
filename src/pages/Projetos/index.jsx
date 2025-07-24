@@ -19,7 +19,7 @@ function Projetos() {
                          <FaJs />
                          <FaReact />
                          </div>
-                    <a href='https://dashboard-python-production-2d8e.up.railway.app/' target='_blank' rel="noopener noreferrer" className={styles.botao}>
+                    <a href='https://dashboard-python-cbkn.onrender.com/' target='_blank' rel="noopener noreferrer" className={styles.botao}>
                           <RiArrowRightCircleFill />
                          </a>
                      </div>

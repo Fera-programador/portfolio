@@ -26,7 +26,7 @@ function Contatos() {
   setLoading(true);
 
   try {
-    const response = await fetch("http://backend-portfolio-gudw.onrender.com/api/mensagem", {
+    const response = await fetch("https://backend-portfolio-gudw.onrender.com/api/mensagem", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ Nome, Email, Mensagem }),
